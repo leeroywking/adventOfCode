@@ -1,7 +1,7 @@
 'use strict';
 
 const intCode = require('./chall1day2.js');
-const input = require('./input.js')
+const input = [...require('./input.js')]
 
 describe('day 2 intCode tests', () => {
     it('passes testcase 1,0,0,0,99', () => {
@@ -15,6 +15,9 @@ describe('day 2 intCode tests', () => {
     });
     it('passes testcase 1,1,1,3,99,5,6,0,99', () => {
         expect(intCode([1,1,1,3,99,5,6,0,99]).codes).toEqual([1,1,1,2,99,5,6,0,99])
+    });
+    it('passes testcase 1,0,0,0,99,1,0,0,1', () => {
+        expect(intCode([1,0,0,0,99,1,0,0,1]).codes).toEqual([2,0,0,0,99,1,0,0,1])
     });
     it('Handles the actual solution', () => {
        input[1] = 12;
