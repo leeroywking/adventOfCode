@@ -13,6 +13,9 @@ describe('day 2 intCode tests', () => {
     it('passes testcase 1,1,1,4,99,5,6,0,99', () => {
         expect(intCode([1,1,1,4,99,5,6,0,99]).codes).toEqual([30,1,1,4,2,5,6,0,99])
     });
+    it('passes testcase 1,1,1,3,99,5,6,0,99', () => {
+        expect(intCode([1,1,1,3,99,5,6,0,99]).codes).toEqual([1,1,1,2,99,5,6,0,99])
+    });
     it('Handles the actual solution', () => {
        input[1] = 12;
        input[2] = 2
