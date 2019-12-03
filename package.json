@@ -1,0 +1,23 @@
+{
+  "name": "adventofcode",
+  "version": "1.0.0",
+  "description": "place to put advent of code challenges",
+  "main": "index.js",
+  "dependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeroywking/adventOfCode.git"
+  },
+  "author": "Lee-Roy King",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leeroywking/adventOfCode/issues"
+  },
+  "homepage": "https://github.com/leeroywking/adventOfCode#readme"
+}
